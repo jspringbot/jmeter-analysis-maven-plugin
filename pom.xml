@@ -89,10 +89,9 @@
   </mailingLists>
 
   <scm>
-    <connection>scm:git:git@github.com:afranken/jmeter-analysis-maven-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:afranken/jmeter-analysis-maven-plugin.git</developerConnection>
-    <url>https://github.com/afranken/jmeter-analysis-maven-plugin</url>
-    <tag>HEAD</tag>
+    <connection>scm:git:https://github.com/jspringbot/jmeter-analysis-maven-plugin.git</connection>
+    <url>scm:git:https://github.com/jspringbot/jmeter-analysis-maven-plugin.git</url>
+    <developerConnection>scm:git:https://github.com/jspringbot/jmeter-analysis-maven-plugin.git</developerConnection>
   </scm>
 
   <distributionManagement>
