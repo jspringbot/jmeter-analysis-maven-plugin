@@ -1,0 +1,30 @@
+{
+  "performanceData":
+  [
+    {
+      "min": 0,
+      "max": 1352,
+      "quantile90": 1,
+      "average": 0,
+      "total": 36049,
+      "statusCodes":{
+                      "200": 36049,
+                      "403": 9,
+                      "404": 10
+                    },
+      "uriByStatusCode":{
+                          "200": [
+                                  "http://success.com",
+                                  "http://anotherSuccess.com"
+                                 ],
+                          "403": [
+                                  "http://forbidden.com"
+                                 ],
+                          "404": [
+                                  "http://notFound.com",
+                                  "http://againNotFound.com"
+                                 ]
+                        }
+    }
+  ]
+}
