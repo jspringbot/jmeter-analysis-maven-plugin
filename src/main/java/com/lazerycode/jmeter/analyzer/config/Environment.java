@@ -3,6 +3,7 @@ package com.lazerycode.jmeter.analyzer.config;
 import com.lazerycode.jmeter.analyzer.CheckResult;
 import com.lazerycode.jmeter.analyzer.ConfigurationCharts;
 import com.lazerycode.jmeter.analyzer.RequestGroup;
+import com.lazerycode.jmeter.analyzer.parser.Parser;
 import com.lazerycode.jmeter.analyzer.writer.Writer;
 
 import freemarker.ext.beans.BeansWrapper;
@@ -70,6 +71,8 @@ public enum Environment {
   private List<Writer> writers;
   private ConfigurationCharts configurationCharts = new ConfigurationCharts();
   private CheckResult checkResult = new CheckResult();
+
+  private Parser parser;
 
   /**
    * If true, preserve the relative part of the result file's path
@@ -233,6 +236,14 @@ public enum Environment {
   public void setRemoteResourcesFromUntilDateFormat(
 		String remoteResourcesFromUntilDateFormat) {
 	this.remoteResourcesFromUntilDateFormat = remoteResourcesFromUntilDateFormat;
+  }
+
+  public Parser getParser() {
+      return parser;
+  }
+
+  public void setParser(Parser parser) {
+      this.parser = parser;
   }
 
 }

@@ -39,7 +39,7 @@ public class ResultAnalyzer {
    */
   public Map<String, AggregatedResponses> analyze(Reader jmeterResult) throws IOException, TemplateException, SAXException {
 
-    Map<String, AggregatedResponses> testResults = new JMeterResultParser().aggregate(jmeterResult);
+    Map<String, AggregatedResponses> testResults = ENVIRONMENT.getParser().aggregate(jmeterResult);
 
     for(Writer writer : ENVIRONMENT.getWriters()) {
       writer.setFileName(fileName);

@@ -15,11 +15,6 @@ Features
 * Statistics and charts can be generated per request group. Request groups are defined by URL patterns.
 * Download of resources from remote systems for the [JMeter][2] execution interval
 
-Build status
-------------
-Buildhive CI:
-[![Build Status](https://buildhive.cloudbees.com/job/afranken/job/jmeter-analysis-maven-plugin/badge/icon)](https://buildhive.cloudbees.com/job/afranken/job/jmeter-analysis-maven-plugin/)
-
 Help
 ----
 Run the HelpMojo of this plugin:

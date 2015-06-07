@@ -25,7 +25,7 @@ import static com.lazerycode.jmeter.analyzer.parser.StatusCodes.HTTPCODE_ERROR;
  *
  * @author Dennis Homann, Arne Franken, Peter Kaul
  */
-public class JMeterResultParser {
+public class JMeterResultParser implements Parser {
 
   /**
    * number of parsed items after which a log message is written
