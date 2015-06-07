@@ -2,6 +2,7 @@ package com.lazerycode.jmeter.analyzer.config;
 
 import com.lazerycode.jmeter.analyzer.CheckResult;
 import com.lazerycode.jmeter.analyzer.ConfigurationCharts;
+import com.lazerycode.jmeter.analyzer.ParserType;
 import com.lazerycode.jmeter.analyzer.RequestGroup;
 import com.lazerycode.jmeter.analyzer.parser.Parser;
 import com.lazerycode.jmeter.analyzer.writer.Writer;
@@ -72,7 +73,7 @@ public enum Environment {
   private ConfigurationCharts configurationCharts = new ConfigurationCharts();
   private CheckResult checkResult = new CheckResult();
 
-  private Parser parser;
+  private Parser parser = ParserType.DEFAULT.createParser();
 
   /**
    * If true, preserve the relative part of the result file's path
